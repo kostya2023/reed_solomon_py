@@ -1,0 +1,16 @@
+[package]
+name = "reed_solomon_py"
+version = "0.1.0"
+edition = "2021"
+authors = ["konstantin Gorshkov <kostya_gorshkov_06@vk.com>"]
+description = "python bindings for reed solomon lib"
+license = "MIT"
+# readme = "README.md"
+repository = "https://github.com/kostya2023/reed_solomon_py"
+[lib]
+name = "reed_solomon_py"
+crate-type = ["cdylib"]
+
+[dependencies]
+reed-solomon-erasure = "6.0"
+pyo3 = { version = "0.24", features = ["extension-module"] }
